@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucata.io</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <section id="sidebar-left">
@@ -16,14 +16,19 @@
     </section>
     <section id="main">
         <table id="main-table">
-            <tr class="row-table">
-                <td class="material-table">Texto exemplo</td>
-                <td class="time-table">0:00</td>
-                <td class="weigth-table">0.00kg</td>
-                <td class="value-table">0,00R$</td>
-                <td class="more-table">...</td>
-            </tr>
-            <!--add more line dinamic...-->
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Data/Hora</th>
+                    <th>Peso</th>
+                    <th>Valor/Kg</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+           
         </table>
         <form action="#">
             <div id="input-buy">
@@ -40,7 +45,7 @@
                 <input type="number" name="weigth-form" id="weigth-form" placeholder="KG">
             </div>
 
-            <button class="button">Add</button>
+            <button class="button" type="submit">Add</button>
         </form>
     </section>
     <section id="sidebar-right">
@@ -65,6 +70,6 @@
             <button class="button">Fechar Caixa</button>
         </div>
     </section>
-
+    <script src="script.js"></script>
 </body>
 </html>
