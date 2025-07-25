@@ -1,0 +1,86 @@
+:root{
+    --var-color1:#002333;
+    --var-color2:#159A9C;
+    --var-color3:#B4BEC9;
+    --var-color4:#DEEFE7;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: var(--var-color1);
+}
+
+.button{
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--var-color2);
+    color: white;
+}
+
+#sidebar-left{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    gap: 10px;
+    flex: 0.20;
+    padding: 20px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    flex: 0.60;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--var-color4);
+    height: 80vh;
+    border-radius: 20px;
+}
+
+#main table{
+    
+}
+
+#main form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#input-buy{
+    display: flex;
+
+}
+
+
+#sidebar-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.20;
+    padding: 20px;
+
+}
+
+#menuToggler{
+    text-align: end;
+}
+
+#close{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pop-up{
+    display: none;
+}
