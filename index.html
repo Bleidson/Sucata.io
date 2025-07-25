@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucata.io</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="sidebar-left">
+        <button class="button">Rota a</button>
+        <button class="button">Rota b</button>
+        <button class="button">Depósito</button>
+        <button class="button">Total</button>
+    </section>
+    <section id="main">
+        <table id="main-table">
+            <tr class="row-table">
+                <td class="material-table"></td>
+                <td class="time-table"></td>
+                <td class="weigth-table"></td>
+                <td class="value-table"></td>
+                <td class="more-table">...</td>
+            </tr>
+            <!--add more line dinamic...-->
+        </table>
+        <form action="#">
+            <select name="material-opt" id="material-opt">
+                <option value="latinha">Latinha</option>
+                <option value="cobre">Cobre</option>
+                <option value="chaparia">Chaparia</option>
+                <option value="aluminioDuro">Aluminio duro</option>
+                <option value="metal">Metal</option>
+                <option value="ferroLata">Ferro Lata</option>
+                <option value="ferroPesado">Ferro Pesado</option>
+                
+            </select>
+            <input type="number" name="weigth-form" id="weigth-form" placeholder="KG">
+            <button class="button">Add</button>
+        </form>
+    </section>
+    <section id="sidebar-right">
+        <div id="menuToggler">
+            <!--Menu Toggler-->
+        </div>
+        <div id="section-pop-ups">
+            <div class="pop-up">
+                <button class="button">Atualizar valor material</button>
+                <button class="button">Cadastrar novo material</button>
+                <button class="button">Historico de caixa</button>
+            </div>
+            <div>
+                <button class="button">Editar</button>
+                <button class="button">Deletar</button>
+            </div>
+            <!--os pop-us estarao com display: none, ate as opcoes serem selecionadas-->
+
+        </div>
+        <div>
+            <button class="button">Fechar Caixa</button>
+        </div>
+    </section>
+</body>
+</html>
