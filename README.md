@@ -33,7 +33,7 @@ Este projeto foi idealizado com base em uma necessidade real do meu ambiente de 
 
 ## 📚 Objetivo Pessoal
 
-Este projeto faz parte da minha jornada na formação **Front-End** pela Udemy. Estou focado em dominar JavaScript puro antes de avançar para frameworks como React, e esse sistema está sendo meu laboratório prático.
+Este projeto faz parte da minha jornada de aprendizado no **Front-End**. Estou focado em dominar JavaScript puro antes de avançar para frameworks como React, e esse sistema está sendo meu laboratório prático.
 
 ---
 
