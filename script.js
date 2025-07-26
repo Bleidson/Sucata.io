@@ -9,18 +9,31 @@
         event.preventDefault();
 
         const material = selectMaterial.value;
+        
         const peso = weigthMaterial.value;
+        const pesoFormatado = Number(peso).toFixed(2);
+        if(!peso || peso <= 0){
+            alert("Inserir um peso valido maior que zero");
+            return;
+        }
+
         const valorKg = 5.00;
+
         const total = peso * valorKg;
+        const totalFormatado = new Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        }).format(total);
+
 
         const dataBuy = new Date();
         const hourBuy = dataBuy.toLocaleTimeString('pt-BR');
 
         const registro = {
             material,
-            peso,
+            peso: pesoFormatado,
             valorKg,
-            total,
+            total: totalFormatado,
             hourBuy,
 
         }
@@ -32,8 +45,61 @@
         form.reset();
         renderTable();
 
-    });
 
+
+
+    });
+    /*
+        document.querySelectorAll('.delete-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const index = parseInt(this.dataset.index);
+                registros.splice(index, 1);
+                renderTable();
+            })
+        });
+
+        document.querySelectorAll('.edit-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const index = parseInt(this.dataset.index);
+                const item = registros[index];
+         
+
+                selectMaterial.value = item.material;
+                weigthMaterial.value = item.peso;
+
+                registros.splice(index, 1);
+                renderTable();
+            });
+        });
+*/
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Escuta os botões depois que o DOM carregar
+            document.querySelector('#main-table').addEventListener('click', function (e) {
+                const target = e.target;
+                const index = parseInt(target.dataset.index);
+
+                if (target.classList.contains('delete-btn')) {
+                    registros.splice(index, 1);
+                    renderTable();
+                }
+
+                if (target.classList.contains('edit-btn')) {
+                    const item = registros[index];
+                if (!item) {
+                    console.error('Item não encontrado no índice:', index);
+                    return;
+                }
+
+                selectMaterial.value = item.material;
+                weigthMaterial.value = item.peso;
+                registros.splice(index, 1);
+                renderTable();
+                }
+            });
+        });
+
+        
     function renderTable(){
         const table = document.querySelector('#main-table');
 
@@ -61,7 +127,10 @@
 
             const tdAction = document.createElement('td');
             tdAction.classList.add('more-table');
-            tdAction.innerHTML = `<button class="more-togle-table">⋮</button>`;
+            tdAction.innerHTML = `
+                <button class="edit-btn" data-index="${index}">✏️</button>
+                <button class="delete-btn" data-index="${index}">🗑️</button>
+            `;
 
             line.appendChild(tdMaterial);
             line.appendChild(tdHourBuy);
