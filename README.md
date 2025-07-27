@@ -82,7 +82,7 @@ git clone https://github.com/seu-usuario/sucata.io.git
 ⚠️ Não é necessário servidor ou dependências externas. Tudo roda 100% client-side.
 ```
 
-##📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```bash
 sucata.io/
@@ -93,6 +93,6 @@ sucata.io/
 └── README.md           # Este arquivo
 ```
 
-##Licença
+## Licença
 
-Projeto de estudo pessoal — livre para uso, modificação e aprendizado.
+   Projeto de estudo pessoal — livre para uso, modificação e aprendizado.
