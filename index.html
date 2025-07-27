@@ -9,27 +9,12 @@
 </head>
 <body>
     <section id="sidebar-left">
-        <button class="button">Rota a</button>
-        <button class="button">Rota b</button>
-        <button class="button">Depósito</button>
-        <button class="button">Total</button>
+        <button class="button" id="btn-rota-a">Rota a</button>
+        <button class="button" id="btn-rota-b">Rota b</button>
+        <button class="button" id="btn-deposito">Depósito</button>
+        <button class="button" id="btn-total">Total</button>
     </section>
     <section id="main">
-        <table id="main-table">
-            <thead>
-                <tr>
-                    <th>Material</th>
-                    <th>Data/Hora</th>
-                    <th>Peso</th>
-                    <th>Valor/Kg</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-           
-        </table>
         <form action="#">
             <div id="input-buy">
                 <select name="material-opt" id="material-opt">
@@ -47,6 +32,16 @@
 
             <button class="button" type="submit">Add</button>
         </form>
+        <table id="main-table">
+            <thead id="thead">
+
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+           
+        </table>
+
     </section>
     <section id="sidebar-right">
         <div id="menuToggler">

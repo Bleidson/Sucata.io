@@ -25,6 +25,8 @@ body{
     color: white;
 }
 
+
+
 #sidebar-left{
     display: flex;
     flex-direction: column;
@@ -46,9 +48,7 @@ body{
     border-radius: 20px;
 }
 
-#main table{
-    
-}
+
 
 #main form{
     display: flex;
