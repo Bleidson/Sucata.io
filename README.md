@@ -1,4 +1,4 @@
-# 💰 Sistema de Controle de Compras — Sucata.io
+# ♻️  Sistema de Controle — Sucata.io
 
 Este projeto nasceu de uma necessidade real dentro de um ferro-velho, onde o controle de compras era feito manualmente em cadernos físicos. Essa abordagem tradicional dificultava o acesso, a análise e a confiabilidade das informações, especialmente na hora de fechar o caixa ao final do dia.
 
