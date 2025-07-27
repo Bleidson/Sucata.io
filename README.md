@@ -1,98 +1,69 @@
-# ♻️ Sucata.io — Sistema de Controle de Compras para Ferro-Velho
+# 💰 Sistema de Controle de Compras — Sucata.io
 
-**Sucata.io** é uma aplicação web desenvolvida para digitalizar e otimizar o controle de compras de materiais em ferros-velhos.  
-Inspirado na rotina real de gestão com cadernos físicos, o sistema substitui esse processo manual por uma interface moderna, intuitiva e funcional — acessível direto do navegador.
+Este projeto nasceu de uma necessidade real dentro de um ferro-velho, onde o controle de compras era feito manualmente em cadernos físicos. Essa abordagem tradicional dificultava o acesso, a análise e a confiabilidade das informações, especialmente na hora de fechar o caixa ao final do dia.
+
+**Sucata.io** é a solução digital criada para organizar, visualizar e consolidar esses dados de maneira simples, acessível e funcional.
 
 ---
 
-## 📌 Funcionalidades Atuais
+## 🚀 Funcionalidades Implementadas
 
-✅ Registro de compras por origem (Rota A, Rota B e Depósito)  
-✅ Exibição de registros em tabela dinâmica  
-✅ Cálculo automático de valor total com base no peso e preço por Kg  
-✅ Edição e exclusão de registros  
-✅ Armazenamento persistente via `localStorage`  
-✅ Suporte individualizado para cada caderno (origem)
+### 📝 Registro de Compras
+- Interface dinâmica para registrar materiais comprados por:
+  - Rota A 
+  - Rota B
+  - Depósito
+- Cada origem funciona como um "caderno digital" separado
+- Os dados são armazenados localmente no navegador via `localStorage`
+
+### 🗃️ Tabela Total Consolidada
+- Visualização geral com todos os registros, independentemente da origem
+- Filtro de exibição com limite de registros (ex: últimos 5 registros)
+
+### 📊 Relatório Diário
+- Página de relatório que exibe:
+  - Tabela total consolidada
+  - Total arrecadado (R$)
+  - Total de quilos comprados
+  - Número total de entradas
+  - Gráfico em pizza com arrecadação por origem
+  - Horário de fechamento do caixa
+
+### 📄 PDF e Impressão
+- Geração de um **PDF com o extrato completo** da tabela total
+- Botão de **impressão direta do relatório** para arquivamento físico
+
+### 🕔 Fechamento de Caixa com Hora
+- Ao clicar em **"Fechar Caixa"**:
+  - O sistema salva a data/hora
+  - Redireciona automaticamente para a página de relatório
+  - Exibe o relatório do dia com todas as informações processadas
 
 ---
 
 ## 🧱 Tecnologias Utilizadas
 
-- HTML5 + CSS3  
-- JavaScript (Vanilla JS)  
-- LocalStorage  
-- Excalidraw (prototipagem visual)  
-- Planejamento em sprints (abordagem real de projeto)
+- **HTML + CSS + JavaScript Vanilla** (sem frameworks)
+- **Chart.js** para visualização gráfica (pizza)
+- **jsPDF + autoTable** para geração de extratos em PDF
+- **LocalStorage** para persistência de dados sem back-end
 
 ---
 
-## 🛠️ Etapas Concluídas
 
-Este projeto foi conduzido como um ciclo real de desenvolvimento ágil, dividido em **sprints**, com entregas incrementais e testes constantes:
+## 💼 Caso de Uso Real
 
-1. **Sprint 1** — Estrutura visual (HTML/CSS)  
-2. **Sprint 2** — Adição de registros com cálculo automático  
-3. **Sprint 3** — Suporte a múltiplas origens (Rota A, B, Depósito)  
-4. **Sprint 4** — Armazenamento local com `localStorage`  
-5. **Sprint 5** — Edição e exclusão de registros  
-6. **Sprint 6** — Valor por material individual  
-7. **Sprint 7 (em andamento)** — Design geral e refatoração visual  
+Este sistema foi idealizado por alguém que trabalha diretamente em um ferro-velho, onde diariamente são compradas cargas de materiais recicláveis em diferentes rotas. Ao digitalizar esse processo, **a conferência de valores, o fechamento diário e a organização geral melhoraram drasticamente**.
 
 ---
 
-## 🔮 Próximas Etapas
+## 👨‍💻 Autor
 
-A próxima fase será a implementação da funcionalidade **Fechamento de Caixa**, com um relatório completo do dia.
-
-O layout desse relatório já foi prototipado e terá:
-
-- Total arrecadado  
-- Peso total comprado  
-- Quantidade de entradas  
-- Extrato completo do dia  
-- Gráfico de pizza com detalhamento por origem  
-- Horário de fechamento  
-- Opção para baixar o relatório  
-- Botão de impressão direta  
+**Dr. Bleidson** — Desenvolvedor web & lutador de Jiu-Jitsu nas horas vagas.  
+Criando soluções que nascem da prática e viram código.
 
 ---
 
-## 👨‍💻 Sobre o Desenvolvedor
+## 📌 Licença
 
-Meu nome é Bleidson e eu estou construindo meu futuro uma linha de código por vez.  
-Sou um jovem desenvolvedor apaixonado por resolver problemas reais com soluções digitais. Persistente, resiliente e movido por propósito, não espero a oportunidade chegar — eu crio o caminho com minhas próprias mãos.
-
-Mesmo enfrentando jornadas duplas e poucos recursos, continuo evoluindo diariamente, sprint após sprint. Este projeto é prova viva da minha capacidade de aprender rápido, aplicar na prática e me adaptar aos desafios com autonomia.
-
-> Eu não estou apenas aprendendo a programar — estou me programando para vencer.
-
----
-
-## 🚀 Como Rodar o Projeto
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/sucata.io.git
-```
-
-2. Abra o arquivo index.html no seu navegador.
-
-```bash
-⚠️ Não é necessário servidor ou dependências externas. Tudo roda 100% client-side.
-```
-
-## 📁 Estrutura do Projeto
-
-```bash
-sucata.io/
-│
-├── index.html          # Página principal
-├── style.css           # Estilos globais
-├── script.js           # Lógica JS da aplicação
-└── README.md           # Este arquivo
-```
-
-## Licença
-
-   Projeto de estudo pessoal — livre para uso, modificação e aprendizado.
+Este projeto é de uso pessoal e educacional. Fique à vontade para se inspirar, adaptar ou contribuir.

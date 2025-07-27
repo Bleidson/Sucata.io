@@ -64,7 +64,7 @@
 
 
     document.addEventListener('DOMContentLoaded', function () {
-        // Escuta os botões depois que o DOM carregar
+       
         
         document.getElementById('btn-rota-a').addEventListener('click', function(){
             tabelaAtual = 'registroRotaA';
@@ -134,9 +134,9 @@
 
         buttons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove a classe de todos
+           
             buttons.forEach(b => b.classList.remove('selected'));
-            // Adiciona no clicado
+            
             btn.classList.add('selected');
         });
         });
