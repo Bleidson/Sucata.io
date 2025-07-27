@@ -74,3 +74,25 @@ Mesmo enfrentando jornadas duplas e poucos recursos, continuo evoluindo diariame
 
 ```bash
 git clone https://github.com/seu-usuario/sucata.io.git
+```
+
+2. Abra o arquivo index.html no seu navegador.
+
+```bash
+⚠️ Não é necessário servidor ou dependências externas. Tudo roda 100% client-side.
+```
+
+##📁 Estrutura do Projeto
+
+```bash
+sucata.io/
+│
+├── index.html          # Página principal
+├── style.css           # Estilos globais
+├── script.js           # Lógica JS da aplicação
+└── README.md           # Este arquivo
+```
+
+##Licença
+
+Projeto de estudo pessoal — livre para uso, modificação e aprendizado.
