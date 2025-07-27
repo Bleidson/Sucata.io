@@ -21,22 +21,41 @@ body{
 
 
 
-#sidebar-left{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    gap: 10px;
-    padding-left: 10px;
-    flex: 0.20;
-    background-color: var(--var-color1);
+#sidebar-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px 0px;
+  flex: 0.20;
+  background-color: var(--var-color1);
+  gap: 40px;
 }
 
-#sidebar-left img{
-    width: 200px;
-    position:absolute;
-    top:0px;
-    left: 40px;
+#logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--var-color2);
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+
+}
+
+#logo span {
+  color: var(--var-color2);
+}
+
+
+#sidebar-left nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 0.9;
+  justify-content: center; 
+  width: 100%;
 }
 
 .btn-sidebar{
@@ -93,7 +112,6 @@ body{
 
 
 
-/* Select estilizado */
 #material-opt {
   padding: 10px;
   border: 1px solid var(--var-color3);
@@ -109,7 +127,7 @@ body{
   border-color: var(--var-color2);
 }
 
-/* Input de peso */
+
 #weigth-form {
   padding: 10px;
   width: 100px;
@@ -167,7 +185,7 @@ body{
     margin-bottom: 30px;
 }
 
-/* 🌐 Estilo da Tabela */
+
 
 #main-table {
   width: 100%;
@@ -180,7 +198,7 @@ body{
   font-family: sans-serif;
 }
 
-/* Cabeçalho */
+
 #main-table thead {
   background-color: var(--var-color2);
   color: white;
@@ -188,36 +206,34 @@ body{
   font-size: 0.9rem;
 }
 
-/* Células do cabeçalho */
+
 #main-table thead th {
   padding: 12px;
   text-align: left;
 }
 
-/* Linhas do corpo */
+
 #main-table tbody tr {
   border-bottom: 1px solid #ddd;
   transition: background-color 0.2s ease-in-out;
 }
 
-/* Células do corpo */
+
 #main-table tbody td {
   padding: 12px;
   font-size: 0.95rem;
   color: var(--var-color1);
 }
 
-/* Hover nas linhas */
+
 #main-table tbody tr:hover {
   background-color: var(--var-color4);
 }
 
-/* Última linha sem borda */
 #main-table tbody tr:last-child {
   border-bottom: none;
 }
 
-/* Células de ação (botões editar/excluir, se houver) */
 .table-action {
   display: flex;
   gap: 8px;
@@ -238,7 +254,6 @@ body{
   background-color: var(--var-color1);
 }
 
-/* 🎯 Estilo para botões de ação (Editar / Excluir) */
 
 .action-btn {
   border: none;
@@ -250,7 +265,6 @@ body{
   margin: 0 2px;
 }
 
-/* Edição (ícone de lápis ✏️) */
 .action-btn:hover {
   background-color: #159A9C;
   border-radius: 5px;
