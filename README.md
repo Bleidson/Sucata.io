@@ -1,5 +1,3 @@
-
-````markdown
 # ♻️ Sucata.io — Sistema de Controle de Compras para Ferro-Velho
 
 **Sucata.io** é uma aplicação web desenvolvida para digitalizar e otimizar o controle de compras de materiais em ferros-velhos.  
@@ -20,10 +18,10 @@ Inspirado na rotina real de gestão com cadernos físicos, o sistema substitui e
 
 ## 🧱 Tecnologias Utilizadas
 
-- HTML5 + CSS3
-- JavaScript (Vanilla JS)
-- LocalStorage
-- Excalidraw (prototipagem visual)
+- HTML5 + CSS3  
+- JavaScript (Vanilla JS)  
+- LocalStorage  
+- Excalidraw (prototipagem visual)  
 - Planejamento em sprints (abordagem real de projeto)
 
 ---
@@ -32,13 +30,13 @@ Inspirado na rotina real de gestão com cadernos físicos, o sistema substitui e
 
 Este projeto foi conduzido como um ciclo real de desenvolvimento ágil, dividido em **sprints**, com entregas incrementais e testes constantes:
 
-1. **Sprint 1** — Estrutura visual (HTML/CSS)
-2. **Sprint 2** — Adição de registros com cálculo automático
-3. **Sprint 3** — Suporte a múltiplas origens (Rota A, B, Depósito)
-4. **Sprint 4** — Armazenamento local com `localStorage`
-5. **Sprint 5** — Edição e exclusão de registros
-6. **Sprint 6** — Valor por material individual
-7. **Sprint 7 (em andamento)** — Design geral e refatoração visual
+1. **Sprint 1** — Estrutura visual (HTML/CSS)  
+2. **Sprint 2** — Adição de registros com cálculo automático  
+3. **Sprint 3** — Suporte a múltiplas origens (Rota A, B, Depósito)  
+4. **Sprint 4** — Armazenamento local com `localStorage`  
+5. **Sprint 5** — Edição e exclusão de registros  
+6. **Sprint 6** — Valor por material individual  
+7. **Sprint 7 (em andamento)** — Design geral e refatoração visual  
 
 ---
 
@@ -48,27 +46,25 @@ A próxima fase será a implementação da funcionalidade **Fechamento de Caixa*
 
 O layout desse relatório já foi prototipado e terá:
 
-- Total arrecadado
-- Peso total comprado
-- Quantidade de entradas
-- Extrato completo do dia
-- Gráfico de pizza com detalhamento por origem
-- Horário de fechamento
-- Opção para baixar o relatório
-- Botão de impressão direta
+- Total arrecadado  
+- Peso total comprado  
+- Quantidade de entradas  
+- Extrato completo do dia  
+- Gráfico de pizza com detalhamento por origem  
+- Horário de fechamento  
+- Opção para baixar o relatório  
+- Botão de impressão direta  
 
 ---
 
 ## 👨‍💻 Sobre o Desenvolvedor
 
-> **Sucata.io** nasceu das mãos de um jovem desenvolvedor determinado, resiliente e com fome de futuro.
+Meu nome é Bleidson e eu estou construindo meu futuro uma linha de código por vez.  
+Sou um jovem desenvolvedor apaixonado por resolver problemas reais com soluções digitais. Persistente, resiliente e movido por propósito, não espero a oportunidade chegar — eu crio o caminho com minhas próprias mãos.
 
-Meu nome é Bleidson, um programador em formação que não espera a oportunidade bater — eu mesmo á construo.  
-Mesmo com rotinas intensas e desafios diários, segue avançando sprint por sprint, aprendendo na prática, aplicando com propósito.
+Mesmo enfrentando jornadas duplas e poucos recursos, continuo evoluindo diariamente, sprint após sprint. Este projeto é prova viva da minha capacidade de aprender rápido, aplicar na prática e me adaptar aos desafios com autonomia.
 
-Cada linha de código deste projeto carrega mais que técnica: carrega **vontade de vencer**, **curiosidade infinita** e uma **ética de trabalho afiada**.
-
-> Não estou apenas aprendendo a programar — estou me programando para o sucesso.
+> Eu não estou apenas aprendendo a programar — estou me programando para vencer.
 
 ---
 
@@ -78,29 +74,3 @@ Cada linha de código deste projeto carrega mais que técnica: carrega **vontade
 
 ```bash
 git clone https://github.com/seu-usuario/sucata.io.git
-````
-
-2. Abra o arquivo `index.html` em seu navegador.
-
-> ⚠️ Não há necessidade de servidor ou instalação de dependências. Tudo funciona 100% client-side.
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-sucata.io/
-│
-├── index.html          # Página principal
-├── style.css           # Estilos globais
-├── script.js           # Lógica JS da aplicação
-└── README.md           # Este arquivo
-```
-
----
-
-## 💡 Licença
-
-Projeto de estudo pessoal — livre para uso e aprendizado.
-
-
