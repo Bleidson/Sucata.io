@@ -4,65 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucata.io</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <section id="sidebar-left">
-        <button class="button" id="btn-rota-a">Rota a</button>
-        <button class="button" id="btn-rota-b">Rota b</button>
-        <button class="button" id="btn-deposito">Depósito</button>
-        <button class="button" id="btn-total">Total</button>
+        <img src="img/LogoSucata01.png" alt="">
+        <nav>
+            <button class=" btn-sidebar" id="btn-rota-a">Rota a</button>
+            <button class=" btn-sidebar" id="btn-rota-b">Rota b</button>
+            <button class=" btn-sidebar" id="btn-deposito">Depósito</button>
+            <button class=" btn-sidebar" id="btn-total">Total</button>
+        </nav>
+
     </section>
     <section id="main">
-        <form action="#">
-            <div id="input-buy">
-                <select name="material-opt" id="material-opt">
-                    <option value="latinha">Latinha</option>
-                    <option value="cobre">Cobre</option>
-                    <option value="chaparia">Chaparia</option>
-                    <option value="aluminioDuro">Aluminio duro</option>
-                    <option value="metal">Metal</option>
-                    <option value="ferroLata">Ferro Lata</option>
-                    <option value="ferroPesado">Ferro Pesado</option>
-                    
-                </select>
-                <input type="number" name="weigth-form" id="weigth-form" placeholder="KG">
-            </div>
-
-            <button class="button" type="submit">Add</button>
-        </form>
-        <table id="main-table">
-            <thead id="thead">
-
-            </thead>
-            <tbody id="tbody">
-
-            </tbody>
-           
-        </table>
-
-    </section>
-    <section id="sidebar-right">
         <div id="menuToggler">
-            <!--Menu Toggler-->
-            ...
+            <span class="material-symbols-outlined">
+                menu
+            </span>    
         </div>
-        <div id="section-pop-ups">
-            <div class="pop-up">
-                <button class="button">Atualizar valor material</button>
-                <button class="button">Cadastrar novo material</button>
-                <button class="button">Historico de caixa</button>
-            </div>
-            <div class="pop-up">
-                <button class="button">Editar</button>
-                <button class="button">Deletar</button>
-            </div>
-            <!--os pop-us estarao com display: none, ate as opcoes serem selecionadas-->
 
+        <div id="form-table">
+            <form action="#">
+                <div id="input-buy">
+                    <select name="material-opt" id="material-opt">
+                        <option value="latinha">Latinha</option>
+                        <option value="cobre">Cobre</option>
+                        <option value="chaparia">Chaparia</option>
+                        <option value="aluminioDuro">Aluminio duro</option>
+                        <option value="metal">Metal</option>
+                        <option value="ferroLata">Ferro Lata</option>
+                        <option value="ferroPesado">Ferro Pesado</option>
+                        
+                    </select>
+                    <input type="number" name="weigth-form" id="weigth-form" placeholder="KG">
+                </div>
+
+                <button class="btn" type="submit">Add</button>
+            </form>
+            <table id="main-table">
+                <thead id="thead">
+
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            
+            </table>
         </div>
+
         <div id="close">
-            <button class="button">Fechar Caixa</button>
+            <button class="btn">Fechar Caixa</button>
         </div>
     </section>
     <script src="script.js"></script>

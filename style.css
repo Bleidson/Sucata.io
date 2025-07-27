@@ -2,7 +2,7 @@
     --var-color1:#002333;
     --var-color2:#159A9C;
     --var-color3:#B4BEC9;
-    --var-color4:#DEEFE7;
+    --var-color4:#f4efe9;
 
 }
 
@@ -14,16 +14,10 @@
 
 body{
     display: flex;
-    background-color: var(--var-color1);
+    background-color: var(--var-color4);
 }
 
-.button{
-    padding: 10px;
-    border-radius: 7px;
-    border: none;
-    background-color: var(--var-color2);
-    color: white;
-}
+
 
 
 
@@ -33,33 +27,125 @@ body{
     height: 100vh;
     justify-content: center;
     gap: 10px;
+    padding-left: 10px;
     flex: 0.20;
-    padding: 20px;
+    background-color: var(--var-color1);
+}
+
+#sidebar-left img{
+    width: 200px;
+    position:absolute;
+    top:0px;
+    left: 40px;
+}
+
+.btn-sidebar{
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    background-color: var(--var-color1);
+    border: none;
+    color: white;
+}   
+
+
+
+.btn-sidebar.selected {
+  background-color: var(--var-color4);
+  color: var(--var-color1);
+  border-radius: 10px 0 0 10px;
 }
 
 #main{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex: 0.60;
     margin: auto;
     padding: 20px;
-    background-color: var(--var-color4);
-    height: 80vh;
+    height: 98vh;
     border-radius: 20px;
+    
+}
+
+#form-table{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
 }
 
 
 
-#main form{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
+
+#main form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 35, 51, 0.05);
+  gap: 20px;
 }
 
-#input-buy{
-    display: flex;
 
+
+/* Select estilizado */
+#material-opt {
+  padding: 10px;
+  border: 1px solid var(--var-color3);
+  border-radius: 8px;
+  background-color: var(--var-color4);
+  color: var(--var-color1);
+  font-weight: bold;
+  outline: none;
+  transition: border 0.2s;
+}
+
+#material-opt:hover {
+  border-color: var(--var-color2);
+}
+
+/* Input de peso */
+#weigth-form {
+  padding: 10px;
+  width: 100px;
+  border: 1px solid var(--var-color3);
+  border-radius: 8px;
+  background-color: var(--var-color4);
+  color: var(--var-color1);
+  font-weight: bold;
+  outline: none;
+  transition: border 0.2s;
+}
+
+#weigth-form::placeholder {
+  color: var(--var-color1);
+  opacity: 0.6;
+}
+
+#weigth-form:hover {
+  border-color: var(--var-color2);
+}
+
+
+.btn {
+  padding: 12px 20px;
+  background-color: var(--var-color2);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #117a7c;
+  transform: scale(1.05);
 }
 
 
@@ -81,6 +167,93 @@ body{
     margin-bottom: 30px;
 }
 
-.pop-up{
-    display: none;
+/* 🌐 Estilo da Tabela */
+
+#main-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: sans-serif;
 }
+
+/* Cabeçalho */
+#main-table thead {
+  background-color: var(--var-color2);
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Células do cabeçalho */
+#main-table thead th {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Linhas do corpo */
+#main-table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Células do corpo */
+#main-table tbody td {
+  padding: 12px;
+  font-size: 0.95rem;
+  color: var(--var-color1);
+}
+
+/* Hover nas linhas */
+#main-table tbody tr:hover {
+  background-color: var(--var-color4);
+}
+
+/* Última linha sem borda */
+#main-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Células de ação (botões editar/excluir, se houver) */
+.table-action {
+  display: flex;
+  gap: 8px;
+}
+
+.table-action button {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--var-color2);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.table-action button:hover {
+  background-color: var(--var-color1);
+}
+
+/* 🎯 Estilo para botões de ação (Editar / Excluir) */
+
+.action-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: font-size 0.2s ease-in-out;
+  padding: 4px;
+  margin: 0 2px;
+}
+
+/* Edição (ícone de lápis ✏️) */
+.action-btn:hover {
+  background-color: #159A9C;
+  border-radius: 5px;
+}
+
+

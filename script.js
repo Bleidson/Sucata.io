@@ -70,21 +70,21 @@
             tabelaAtual = 'registroRotaA';
             carregarRegistros();
             renderTable();
-            document.querySelector('form').style.display = `block`;
+            document.querySelector('form').style.display = `flex`;
         });
 
         document.getElementById('btn-rota-b').addEventListener('click', function(){
             tabelaAtual = 'registroRotaB';
             carregarRegistros();
             renderTable();
-            document.querySelector('form').style.display = `block`;
+            document.querySelector('form').style.display = `flex`;
         });
 
         document.getElementById('btn-deposito').addEventListener('click', function(){
             tabelaAtual = 'registroDeposito';
             carregarRegistros();
             renderTable();
-            document.querySelector('form').style.display = `block`;
+            document.querySelector('form').style.display = `flex`;
         });
 
         document.getElementById('btn-total').addEventListener('click', function(){
@@ -103,6 +103,7 @@
 
             if (target.classList.contains('delete-btn')) {
                 registros.splice(index, 1);
+                salvarRegistros();
                 renderTable();
             }
 
@@ -119,6 +120,18 @@
             renderTable();
             }
         });
+
+        const buttons = document.querySelectorAll('.btn-sidebar');
+
+        buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove a classe de todos
+            buttons.forEach(b => b.classList.remove('selected'));
+            // Adiciona no clicado
+            btn.classList.add('selected');
+        });
+        });
+
     });
 
     function salvarRegistros(){
@@ -194,6 +207,7 @@
                     <th>Data/Hora</th>
                     <th>Peso</th>
                     <th>Valor</th>
+                    <th></th>
                 </tr>
             </thead>
         `;
@@ -237,8 +251,8 @@
             const tdAction = document.createElement('td');
             tdAction.classList.add('more-table');
             tdAction.innerHTML = `
-                <button class="edit-btn" data-index="${index}">✏️</button>
-                <button class="delete-btn" data-index="${index}">🗑️</button>
+                <button class="edit-btn action-btn" data-index="${index}">✏️</button>
+                <button class="delete-btn action-btn" data-index="${index}">🗑️</button>
             `;
 
             row.appendChild(tdMaterial);
