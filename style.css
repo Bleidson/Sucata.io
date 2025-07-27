@@ -15,6 +15,7 @@
 body{
     display: flex;
     background-color: var(--var-color4);
+    font-family: 'Segoe UI', sans-serif;
 }
 
 
@@ -34,9 +35,8 @@ body{
 }
 
 #logo {
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--var-color2);
-  font-size: 1.8rem;
+  font-size:2rem;
   margin-top: 30px;
   margin-bottom: 10px;
   width: 100%;

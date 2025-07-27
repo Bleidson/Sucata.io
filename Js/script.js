@@ -94,6 +94,15 @@
             document.querySelector('form').style.display = `none`;
         })
 
+        document.querySelector('.fechar-btn').addEventListener('click', () => {
+            const agora = new Date();
+            const horaFechamento = agora.toLocaleString('pt-BR');
+
+            localStorage.setItem('horaFechamento', horaFechamento);
+            window.location.href = 'Pages/relatorio.html'
+
+        })
+
         carregarRegistros();
         renderTable();
 
