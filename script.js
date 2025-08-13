@@ -99,7 +99,7 @@
             const horaFechamento = agora.toLocaleString('pt-BR');
 
             localStorage.setItem('horaFechamento', horaFechamento);
-            window.location.href = 'Pages/relatorio.html'
+            window.location.href = '/relatorio.html'
 
         })
 

@@ -1,4 +1,4 @@
-import { renderTabelaTotal } from "./utills.js";
+import { renderTabelaTotal } from "/utills.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     const thead = document.querySelector('#thead');
